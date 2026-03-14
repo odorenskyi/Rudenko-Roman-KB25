@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1773483627 source:c:\users\Андрій\rudenko-roman-kb25\lab08\prj\rudenko_task\main.cpp
+	<iostream>
+	<iomanip>
+	"ModulesRudenko.h"
+
+1773401177 c:\users\Андрій\rudenko-roman-kb25\lab08\prj\rudenko_task\modulesrudenko.h
+
