@@ -54,6 +54,6 @@ int main()
         cin >> exit;
 
     } while (exit != 't' && exit != 'T' && exit != 'с');
-
+    system("pause");
     return 0;
 }
