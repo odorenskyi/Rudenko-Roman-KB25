@@ -147,6 +147,6 @@ int main()
         cout << "Actual:\n" << actual;
         cout << "Result: passed\n\n";
     }
-
+    system("pause");
     return 0;
 }
