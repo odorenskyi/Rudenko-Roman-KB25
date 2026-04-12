@@ -148,7 +148,7 @@ void task10_1(string inputFileName, string outputFileName) //функція пр
         }
     }
 
-    string text = "ти саме цього хотів";
+    string text = "Про себе не кажи недобрих слів Бо має сказане таємну силу Кажи Я сильний впевнений щасливий І буде саме так як ти хотів";
 
     bool found = false; //Змінна для перевірки
 

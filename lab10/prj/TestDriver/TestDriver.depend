@@ -1,11 +1,9 @@
 # depslib dependency file v1.0
-1776025173 source:c:\users\Андрій\rudenko-roman-kb25\lab08\prj\modulesrudenko\main.cpp
+1776024660 source:c:\users\Андрій\rudenko-roman-kb25\lab10\prj\testdriver\main.cpp
 	<iostream>
-	<math.h>
-	"ModulesRudenko.h"
-	<string>
 	<fstream>
-	<ctime>
+	<string>
+	"ModulesRudenko.h"
 
 1776023698 c:\users\Андрій\rudenko-roman-kb25\lab08\prj\modulesrudenko\modulesrudenko.h
 	<string>
