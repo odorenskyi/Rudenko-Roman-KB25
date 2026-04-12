@@ -2,6 +2,8 @@
 #include <math.h>
 #include "ModulesRudenko.h"
 #include <string>
+#include <fstream>
+#include <ctime>
 using namespace std;
 
 //ЗАДАЧА 9.1
@@ -119,5 +121,113 @@ double s_calculation(double x, double y, double z)
     }
     s = (sin(x)/sqrt(abs((y*z)/(x+y)))) + 3*pow(y,5);
     return s;
+}
+
+//ЗАДАЧА 10.1
+void task10_1(string inputFileName, string outputFileName) //функція приймає ім'я вхідного і вихідного файлу
+{
+    ifstream in(inputFileName); //Відкриваємо вхідний файл для читання
+    ofstream out(outputFileName); //Відкриваємо (або створюємо) вихідний файл для запису
+
+    if (!in.is_open()) //Якщо файл не відкрився
+    {
+        cout << "Помилка відкриття файлу" << endl;
+        return;
+    }
+
+    string word; //Змінна для слова
+    in >> word; //Зчитуємо слово з файлу
+
+    int count = 0; //Лічильник літер "у"
+
+    for (int i = 0; i < word.length(); i++) //Проходимо по кожній букві слова
+    {
+        if (word[i] == 'у' || word[i] == 'У') //Якщо літера "у"
+        {
+            count++; //Збільшуємо лічильник
+        }
+    }
+
+    string text = "ти саме цього хотів";
+
+    bool found = false; //Змінна для перевірки
+
+    if (text.find(word) != string::npos) //Шукаємо слово в тексті
+    {
+        found = true; //Якщо знайшли
+    }
+
+    out << "Автор: Руденко" << endl; //Записуємо автора
+    out << "Кількість у: " << count << endl; //Записуємо кількість
+
+    if (found) //Якщо слово знайдено
+    {
+        out << "Слово є у тексті" << endl;
+    }
+    else
+    {
+        out << "Слова немає" << endl;
+    }
+
+    in.close(); //Закриваємо вхідний файл
+    out.close(); //Закриваємо вихідний файл
+}
+
+//ЗАДАЧА 10.2
+void task10_2(string fileName) //Функція приймає ім'я файлу
+{
+    ifstream in(fileName); //Відкриваємо файл для читання
+
+    if (!in.is_open()) //Якщо не відкрився
+    {
+        cout << "Помилка відкриття файлу" << endl;
+        return;
+    }
+
+    string word; //Змінна для слова
+    in >> word; //Зчитуємо слово
+
+    in.close(); //Закриваємо файл
+
+    ofstream out(fileName, ios::app); //Відкриваємо файл для дописування
+
+    if (word.length() > 0) //Якщо слово не пусте
+    {
+        out << "Перша літера: " << word[0] << endl;
+        out << "Остання літера: " << word[word.length() - 1] << endl;
+    }
+
+    time_t now = time(0); //Беремо поточний час
+
+    out << "Дата і час: " << ctime(&now) << endl; //Записуємо дату і час
+
+    out.close(); //Закриваємо файл
+}
+
+// ЗАДАЧА 10.3
+void task10_3(string fileName, double x, double y, double z, int b) //Функція приймає файл і числа
+{
+    ofstream out(fileName, ios::app); //Відкриваємо файл для дописування
+
+    double result = s_calculation(x, y, z); //Викликаємо функцію з 8 лабораторної
+
+    out << "Результат: " << result << endl; //Записуємо результат
+
+    string binary = ""; //Рядок для двійкового числа
+
+    if (b == 0) //Якщо число 0
+    {
+        binary = "0"; //Двійковий код 0
+    }
+
+    while (b > 0)
+    {
+        binary = char('0' + (b % 2)) + binary; //Додаємо 0 або 1
+        b = b / 2; //Ділимо число на 2
+    }
+
+    out << "Двійкове: " << binary << endl; //Записуємо результат
+
+    out.close(); //Закриваємо файл
 }
 
