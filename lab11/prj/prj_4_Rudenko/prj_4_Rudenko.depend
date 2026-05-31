@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1779220677 source:c:\users\Андрій\downloads\telegram desktop\modules_bureiko.cpp
+	<iostream>
+	<cstring>
+	"Modules_Bureiko.h"
+
+1779220677 c:\users\Андрій\downloads\telegram desktop\modules_bureiko.h
+	"struct_type_project_4.h"
+
+1779220714 c:\users\Андрій\downloads\telegram desktop\struct_type_project_4.h
+
+1779220694 source:c:\users\Андрій\downloads\telegram desktop\modules_primak.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<string>
+	"Modules_Primak.h"
+
+1779220694 c:\users\Андрій\downloads\telegram desktop\modules_primak.h
+	"struct_type_project_4.h"
+
+1780226364 source:c:\users\Андрій\rudenko-roman-kb25\lab11\prj\modules_rudenko.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+	"Modules_Rudenko.h"
+
+1780227149 c:\users\Андрій\rudenko-roman-kb25\lab11\prj\modules_rudenko.h
+	"struct_type_project_4.h"
+
+1780222309 c:\users\Андрій\rudenko-roman-kb25\lab11\prj\struct_type_project_4.h
+
+1779220677 source:c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\modules_bureiko.cpp
+	<iostream>
+	<cstring>
+	"Modules_Bureiko.h"
+
+1779220677 c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\modules_bureiko.h
+	"struct_type_project_4.h"
+
+1780222309 c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\struct_type_project_4.h
+
+1779220694 source:c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\modules_primak.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<string>
+	"Modules_Primak.h"
+
+1779220694 c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\modules_primak.h
+	"struct_type_project_4.h"
+
+1780226364 source:c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\modules_rudenko.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+	"Modules_Rudenko.h"
+
+1780227149 c:\users\Андрій\rudenko-roman-kb25\lab11\prj\prj_4_rudenko\modules_rudenko.h
+	"struct_type_project_4.h"
+
