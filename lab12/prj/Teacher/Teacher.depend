@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1780411626 source:c:\users\Андрій\rudenko-roman-kb25\lab12\prj\teacher\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<string>
+	"ModulesRudenko.h"
+
+1780407751 c:\users\Андрій\rudenko-roman-kb25\lab12\prj\teacher\modulesrudenko.h
+	<string>
+

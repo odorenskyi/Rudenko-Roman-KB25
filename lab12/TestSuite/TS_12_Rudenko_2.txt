@@ -1,0 +1,4 @@
+TC10;getLength;1
+TC11;getWidth;1
+TC12;getHeight;1
+TC13;getSurfaceArea;6

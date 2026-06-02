@@ -1,0 +1,9 @@
+TC01;getLength;10
+TC02;getWidth;5
+TC03;getHeight;1
+TC04;getSurfaceArea;130
+TC05;setDimensions(20,10,2);OK
+TC06;getLength;20
+TC07;getWidth;10
+TC08;getHeight;2
+TC09;getSurfaceArea;520
